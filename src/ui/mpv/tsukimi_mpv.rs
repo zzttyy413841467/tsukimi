@@ -191,10 +191,10 @@ impl TsukimiMPV {
         self.ctx.replace(Some(ctx));
     }
 
-+    pub fn set_media_title(&self, value: &str) {
-+        self.set_property("options/force-media-title", value);
-+    }
-+
+    pub fn set_media_title(&self, value: &str) {
+        self.set_property("options/force-media-title", value);
+    }
+
     pub fn set_position(&self, value: f64) {
         self.set_property("time-pos", value);
     }
