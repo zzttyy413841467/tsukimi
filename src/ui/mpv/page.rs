@@ -301,6 +301,7 @@ impl MPVPage {
                 imp.suburl
                     .replace(suburi.map(|suburi| EMBY_CLIENT.get_streaming_url(&suburi)));
                 imp.video.play(&url, percentage);
+				imp.video.set_media_title(&name);
                 imp.back.replace(back);
             }
         ));

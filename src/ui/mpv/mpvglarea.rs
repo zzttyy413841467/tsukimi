@@ -128,6 +128,10 @@ impl MPVGLArea {
         mpv.pause(false);
     }
 
++    pub fn set_media_title(&self, title: &str) {
++        self.imp().mpv.set_media_title(title)
++    }
+
     pub fn add_sub(&self, url: &str) {
         self.imp().mpv.add_sub(url)
     }
